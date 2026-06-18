@@ -1,6 +1,6 @@
 ---
 name: shap-figures
-description: Produce top-journal / Nature-style figures for ML, SHAP, GAM and GIS / big-data work — unified coolwarm palette (blue=low/negative, red=high/positive), big clear serif fonts, labelled (a)(b)(c) composites. Use when the user wants to beautify or generate publication-quality plots: SHAP beeswarm/summary, feature-importance bars + nightingale rose, GAM dependence with CI & thresholds, model predicted-vs-actual scatter, spatial SHAP point maps with north arrow / scale bar, monthly trend lines, ablation grids, or multi-panel combined figures. Provides a ready-to-import helper library (scripts/shap_viz.py).
+description: Produce top-journal / Nature-grade SHAP visualisations. Use this whenever the user works with SHAP values or wants to beautify / generate publication-quality SHAP figures — SHAP beeswarm & summary plots, mean-|SHAP| feature-importance bars + nightingale rose, SHAP dependence plots (GAM fit with CI, red/blue positive-negative fills, thresholds, in-panel R² & p), spatial SHAP point maps (coolwarm diverging, north arrow + scale bar), monthly SHAP-trend lines, and labelled (a)(b)(c) multi-panel SHAP composites. Unified coolwarm palette (blue=low/negative, red=high/positive), big clear serif fonts. Also covers the surrounding ML/GAM/GIS figures (model predicted-vs-actual scatter, ablation grids). Ships a ready-to-import helper library (scripts/shap_viz.py).
 ---
 
 # Journal-grade SHAP figures (coolwarm toolkit)
