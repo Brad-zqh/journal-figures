@@ -1,12 +1,12 @@
 ---
-name: journal-figures
-description: Produce top-journal / Nature-style figures for ML, SHAP, GAM and GIS / big-data work — unified coolwarm palette (blue=low/negative, red=high/positive), big clear serif fonts, labelled (a)(b)(c) composites. Use when the user wants to beautify or generate publication-quality plots: SHAP beeswarm/summary, feature-importance bars + nightingale rose, GAM dependence with CI & thresholds, model predicted-vs-actual scatter, spatial SHAP point maps with north arrow / scale bar, monthly trend lines, ablation grids, or multi-panel combined figures. Provides a ready-to-import helper library (scripts/journal_viz.py).
+name: shap-figures
+description: Produce top-journal / Nature-style figures for ML, SHAP, GAM and GIS / big-data work — unified coolwarm palette (blue=low/negative, red=high/positive), big clear serif fonts, labelled (a)(b)(c) composites. Use when the user wants to beautify or generate publication-quality plots: SHAP beeswarm/summary, feature-importance bars + nightingale rose, GAM dependence with CI & thresholds, model predicted-vs-actual scatter, spatial SHAP point maps with north arrow / scale bar, monthly trend lines, ablation grids, or multi-panel combined figures. Provides a ready-to-import helper library (scripts/shap_viz.py).
 ---
 
-# Journal-grade figures (coolwarm toolkit)
+# Journal-grade SHAP figures (coolwarm toolkit)
 
 A reusable toolkit for publication-quality ML / SHAP / GAM / GIS visualisation.
-Use the bundled `scripts/journal_viz.py` (axes-level helpers — you own the
+Use the bundled `scripts/shap_viz.py` (axes-level helpers — you own the
 `Figure`/`GridSpec`, the helpers draw into your `Axes`).
 
 ## When to use
@@ -31,8 +31,8 @@ scatter, spatial SHAP maps, monthly trend, ablation, or combined multi-panel fig
 ## How to use the library
 ```python
 import sys; sys.path.insert(0, os.path.expanduser(
-    "~/.claude/skills/journal-figures/scripts"))
-import journal_viz as jv
+    "~/.claude/skills/shap-figures/scripts"))
+import shap_viz as jv
 jv.set_style()                       # global serif / sizes
 
 # SHAP beeswarm (one panel)
@@ -55,7 +55,7 @@ jv.stack_images(paths, "combined.png", vertical=True,
                 labels=jv.dep_labels(["Revenue", "ADR", "RevPAR"]))
 ```
 
-## Function reference (`journal_viz.py`)
+## Function reference (`shap_viz.py`)
 - `set_style(serif, base)` — global rcParams.
 - `beeswarm(ax, shap_mat, feat_vals, names, cmap, dot, xlim, spread_frac, name_colors)`.
 - `add_colorbar(ax, fig, cmap, label, full_height)` — Low/High slim bar.

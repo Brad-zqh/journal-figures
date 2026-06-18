@@ -1,7 +1,7 @@
 """
-journal_viz.py — Journal-grade figure toolkit (coolwarm theme)
-==============================================================
-Dataset-agnostic helpers for Nature/top-journal style ML / SHAP / GIS figures.
+shap_viz.py — Journal-grade SHAP figure toolkit (coolwarm theme)
+===============================================================
+Dataset-agnostic helpers for Nature/top-journal style SHAP / ML / GAM / GIS figures.
 Everything is axes-level (you own the Figure/GridSpec), so it composes freely.
 
 Conventions
@@ -12,7 +12,7 @@ Conventions
 
 Quick start
 -----------
-    import journal_viz as jv
+    import shap_viz as jv
     jv.set_style()
     fig, ax = plt.subplots()
     jv.gam_dependence(ax, x, shap_x, name="Vegetation")

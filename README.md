@@ -1,4 +1,4 @@
-# journal-figures
+# shap-figures
 
 A [Claude Code](https://claude.com/claude-code) **Skill dedicated to
 top-journal / Nature-grade SHAP visualisation** (and the surrounding
@@ -21,18 +21,18 @@ ready-to-import, dataset-agnostic helper library.
 Clone into your personal Claude Code skills folder:
 
 ```bash
-git clone https://github.com/Brad-zqh/journal-figures \
-  ~/.claude/skills/journal-figures
+git clone https://github.com/Brad-zqh/shap-figures \
+  ~/.claude/skills/shap-figures
 ```
 
-Restart your Claude Code session, then trigger with `/journal-figures` or just
+Restart your Claude Code session, then trigger with `/shap-figures` or just
 ask for "journal-quality SHAP / dependence / map figures".
 
 ## Use the library directly
 ```python
 import sys, os
-sys.path.insert(0, os.path.expanduser("~/.claude/skills/journal-figures/scripts"))
-import journal_viz as jv
+sys.path.insert(0, os.path.expanduser("~/.claude/skills/shap-figures/scripts"))
+import shap_viz as jv
 
 jv.set_style()
 fig, ax = plt.subplots()
