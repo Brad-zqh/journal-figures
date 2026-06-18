@@ -1,7 +1,8 @@
 # journal-figures
 
-A [Claude Code](https://claude.com/claude-code) **Skill** for producing
-top-journal / Nature-style figures for **ML, SHAP, GAM and GIS / big-data** work.
+A [Claude Code](https://claude.com/claude-code) **Skill dedicated to
+top-journal / Nature-grade SHAP visualisation** (and the surrounding
+ML / GAM / GIS / big-data figures).
 
 Unified **coolwarm** palette (blue = low / negative, red = high / positive),
 big clear serif fonts, and labelled `(a) (b) (c)` composites. Ships a
